@@ -1,0 +1,12 @@
+﻿{
+  "Name": "SAP_PR_Item",
+  "Type": "Screen",
+  "Id": "dY9XV8btY02ASsGnTAu91Q",
+  "Reference": "CzpS0zKua0iQdKHLw-uqIg/dY9XV8btY02ASsGnTAu91Q",
+  "ParentRef": "CzpS0zKua0iQdKHLw-uqIg/M4w7dx0nhkCaSarcCbg-BQ",
+  "Created": "2026-03-02T04:24:08.623434Z",
+  "Updated": "2026-03-02T04:24:08.623434Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

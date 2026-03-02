@@ -1,0 +1,10 @@
+{
+  "Name": "NextButton",
+  "Type": "Descriptor",
+  "Id": "NxB20001000000000001",
+  "Reference": "ZftEUAJ9MUyMlt_mopmLlw/NxB20001000000000001",
+  "ParentRef": "ZftEUAJ9MUyMlt_mopmLlw/OgUKpTetdkOEBAAHhjTJaw",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

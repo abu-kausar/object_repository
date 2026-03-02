@@ -1,0 +1,11 @@
+{
+  "Name": "Login_Email",
+  "Description": "https://accounts.google.com/",
+  "Type": "Screen",
+  "Id": "e2g1TFksRUWIhQL26EXtMg",
+  "Reference": "ZftEUAJ9MUyMlt_mopmLlw/e2g1TFksRUWIhQL26EXtMg",
+  "ParentRef": "ZftEUAJ9MUyMlt_mopmLlw/tjZwPnzch0-f2u1tNZZq6w",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

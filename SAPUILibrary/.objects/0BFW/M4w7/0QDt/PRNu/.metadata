@@ -1,0 +1,10 @@
+{
+  "Name": "PRNumberText",
+  "Type": "Descriptor",
+  "Id": "PRNu0001000000000001",
+  "Reference": "CzpS0zKua0iQdKHLw-uqIg/PRNu0001000000000001",
+  "ParentRef": "CzpS0zKua0iQdKHLw-uqIg/0QDtAtkmpEuOkV8qT6ESoQ",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

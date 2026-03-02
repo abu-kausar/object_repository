@@ -1,0 +1,44 @@
+{
+    "SchemaVersion": "4.0",
+    "Applications": [
+        {
+            "Id": "f49d4315-c11d-4e74-a7fa-c2a9c49615bc",
+            "Name": "GoogleWorkspace",
+            "Version": "1.0.0",
+            "Type": "Web",
+            "CreatedAt": "2026-03-02 05:17:17",
+            "Screens": [
+                {
+                    "Id": "2390eee6-1dce-4b19-8f61-bd4e0d36a7f9",
+                    "Name": "Login: Email",
+                    "DisplayName": "Login: Email",
+                    "URL": "https://accounts.google.com/v3/signin/identifier?dsh=S-703532286%3A1772407045080293&ifkv=ASfE1-r6fAP9UiV4JbsfmrsINnMi85bYgy6h3Prk65TjJC-ns1PANndfvEXvIvC3quUplRm7k-d2&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin",
+                    "UIElements": [
+                        {
+                            "Id": "bc59962a-8e6b-4004-b613-a6b115df87ce",
+                            "Name": "EmailInput",
+                            "DisplayName": "EmailInput",
+                            "Type": "Input",
+                            "Selector": {
+                                "Type": "Id",
+                                "Value": "identifierId"
+                            },
+                            "CapturedAt": "2026-03-02 05:17:26"
+                        },
+                        {
+                            "Id": "4aab65e5-98ef-4e0f-ae8a-35b625f3d6a3",
+                            "Name": "NextButton",
+                            "DisplayName": "NextButton",
+                            "Type": "Button",
+                            "Selector": {
+                                "Type": "Id",
+                                "Value": "identifierNext"
+                            },
+                            "CapturedAt": "2026-03-02 05:17:26"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

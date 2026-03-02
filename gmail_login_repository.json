@@ -1,0 +1,207 @@
+{
+    "SchemaVersion": "4.0",
+    "Applications": [
+        {
+            "Id": "d2d86013-3d33-4b60-8afe-b0ca4475bcce",
+            "Name": "GoogleWorkspace",
+            "Version": "1.0.0",
+            "Type": "Web",
+            "CreatedAt": "2026-03-02 05:31:02",
+            "Screens": [
+                {
+                    "Id": "eff3660e-ee29-4b92-a6de-920d9f24faee",
+                    "Name": "Login: Email",
+                    "DisplayName": "Login: Email",
+                    "URL": "https://accounts.google.com/v3/signin/identifier?dsh=S1679488697%3A1772407867248172&ifkv=ASfE1-oDN9UPf_eYRCZKaWqlDKkbMzSfte82_J3uwAkXTB-DKWj6omynQ54Yn1ma4kSqFgrXgAIP6A&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin",
+                    "UIElements": [
+                        {
+                            "Id": "4f1f98e4-470d-4c65-a020-75548084ae28",
+                            "Name": "EmailInput",
+                            "DisplayName": "EmailInput",
+                            "Type": "Input",
+                            "Selector": {
+                                "Type": "Id",
+                                "Value": "identifierId"
+                            },
+                            "CapturedAt": "2026-03-02 05:31:08",
+                            "LastUpdated": "2026-03-02 07:43:43"
+                        },
+                        {
+                            "Id": "eb80acbf-0d28-43b8-9127-0e7ab937a5da",
+                            "Name": "NextButton",
+                            "DisplayName": "NextButton",
+                            "Type": "Button",
+                            "Selector": {
+                                "Type": "Id",
+                                "Value": "identifierNext"
+                            },
+                            "CapturedAt": "2026-03-02 05:31:08",
+                            "LastUpdated": "2026-03-02 07:43:44"
+                        }
+                    ]
+                },
+                {
+                    "Id": "968f9ab6-01eb-49f0-91fd-397ecc1305dc",
+                    "Name": "Login: Password",
+                    "DisplayName": "Login: Password",
+                    "URL": "https://accounts.google.com/v3/signin/identifier?dsh=S1679488697%3A1772407867248172&ifkv=ASfE1-oDN9UPf_eYRCZKaWqlDKkbMzSfte82_J3uwAkXTB-DKWj6omynQ54Yn1ma4kSqFgrXgAIP6A&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin",
+                    "UIElements": [
+                        {
+                            "Id": "9b444dfe-61b7-41fe-86bc-e7b27b404aee",
+                            "Name": "PasswordInput",
+                            "DisplayName": "PasswordInput",
+                            "Type": "Input",
+                            "Selector": {
+                                "Type": "CssSelector",
+                                "Value": "input[name='Passwd']"
+                            },
+                            "CapturedAt": "2026-03-02 05:31:14",
+                            "LastUpdated": "2026-03-02 07:43:49"
+                        },
+                        {
+                            "Id": "ceccc455-7718-4e9b-a726-c4c80da99f53",
+                            "Name": "NextButton",
+                            "DisplayName": "NextButton",
+                            "Type": "Button",
+                            "Selector": {
+                                "Type": "Id",
+                                "Value": "passwordNext"
+                            },
+                            "CapturedAt": "2026-03-02 05:31:14",
+                            "LastUpdated": "2026-03-02 07:43:50"
+                        }
+                    ]
+                },
+                {
+                    "Id": "f8ab2fa7-ab64-4b07-baf5-abcf5d443622",
+                    "Name": "Gmail: Dashboard",
+                    "DisplayName": "Gmail: Dashboard",
+                    "URL": "https://mail.google.com/mail/u/0/#inbox",
+                    "UIElements": [
+                        {
+                            "Id": "cae3884c-bdc8-417f-a821-aa94dcf9a954",
+                            "Name": "Inbox",
+                            "DisplayName": "Inbox",
+                            "Type": "Link",
+                            "Selector": {
+                                "Type": "XmlPath",
+                                "Value": "//a[contains(@href, '#inbox')]"
+                            },
+                            "CapturedAt": "2026-03-02 05:32:46",
+                            "LastUpdated": "2026-03-02 07:45:46"
+                        },
+                        {
+                            "Id": "11484f9e-41ff-4bf1-bda4-4412c504f1fe",
+                            "Name": "Sent",
+                            "DisplayName": "Sent",
+                            "Type": "Link",
+                            "Selector": {
+                                "Type": "XmlPath",
+                                "Value": "//a[contains(@href, '#sent')]"
+                            },
+                            "CapturedAt": "2026-03-02 05:32:46",
+                            "LastUpdated": "2026-03-02 07:45:46"
+                        },
+                        {
+                            "Id": "26f433dc-1c20-4b27-b252-2ce23831baf2",
+                            "Name": "Drafts",
+                            "DisplayName": "Drafts",
+                            "Type": "Link",
+                            "Selector": {
+                                "Type": "XmlPath",
+                                "Value": "//a[contains(@href, '#drafts')]"
+                            },
+                            "CapturedAt": "2026-03-02 05:32:46",
+                            "LastUpdated": "2026-03-02 07:45:47"
+                        },
+                        {
+                            "Id": "a4370447-d2fb-4d98-a0d3-1524f3072260",
+                            "Name": "Compose",
+                            "DisplayName": "Compose",
+                            "Type": "Button",
+                            "Selector": {
+                                "Type": "XmlPath",
+                                "Value": "//div[text()='Compose']"
+                            },
+                            "CapturedAt": "2026-03-02 05:32:46",
+                            "LastUpdated": "2026-03-02 07:45:47"
+                        },
+                        {
+                            "Id": "50c3f0ea-db18-4448-bbb6-09d3ec8dcbaa",
+                            "Name": "Spam",
+                            "DisplayName": "Spam",
+                            "Type": "Link",
+                            "Selector": {
+                                "Type": "XmlPath",
+                                "Value": "//a[contains(@href, '#spam')]"
+                            },
+                            "CapturedAt": "2026-03-02 10:05:00",
+                            "LastUpdated": "2026-03-02 10:05:00"
+                        },
+                        {
+                            "Id": "7ae8b375-7b58-45af-86ea-1c4b7541fbb7",
+                            "Name": "Social",
+                            "DisplayName": "Social",
+                            "Type": "Link",
+                            "Selector": {
+                                "Type": "XmlPath",
+                                "Value": "//a[contains(@href, '#social')]"
+                            },
+                            "CapturedAt": "2026-03-02 10:05:00",
+                            "LastUpdated": "2026-03-02 10:05:00"
+                        }
+                    ]
+                },
+                {
+                    "Id": "92813822-f79e-4043-8049-de3c08187da4",
+                    "Name": "Gmail: Compose",
+                    "DisplayName": "Gmail: Compose",
+                    "URL": "https://mail.google.com/mail/u/0/#inbox?compose=new",
+                    "UIElements": [
+                        {
+                            "Id": "19ac33ca-a854-457c-9327-4a3ddcddf51e",
+                            "Name": "Subject",
+                            "DisplayName": "Subject",
+                            "Type": "Input",
+                            "Selector": {
+                                "Type": "CssSelector",
+                                "Value": "input[name='subjectbox']"
+                            },
+                            "CapturedAt": "2026-03-02 07:46:20"
+                        },
+                        {
+                            "Id": "3c68cf0c-9171-4228-8fb1-da2d9f78e995",
+                            "Name": "MessageBody",
+                            "DisplayName": "MessageBody",
+                            "Type": "Input",
+                            "Selector": {
+                                "Type": "CssSelector",
+                                "Value": "div[aria-label='Message Body']"
+                            },
+                            "CapturedAt": "2026-03-02 07:46:20"
+                        },
+                        {
+                            "Id": "e2e21cb4-7e82-468e-aa7d-5777a573c076",
+                            "Name": "SendButton",
+                            "DisplayName": "SendButton",
+                            "Type": "Button",
+                            "Selector": {
+                                "Type": "XmlPath",
+                                "Value": "//div[text()='Send' and @role='button']"
+                            },
+                            "CapturedAt": "2026-03-02 07:46:20"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "WorkflowSteps": [
+        "1. Login: Email -> Enter email and click Next",
+        "2. Login: Password -> Enter password and click Next",
+        "3. Gmail: Dashboard -> Wait for Inbox, then click Compose",
+        "4. Gmail: Compose -> Enter Recipient (To), Subject, and Body",
+        "5. Gmail: Compose -> Click SendButton",
+        "6. Gmail: Dashboard -> Click Sent to verify"
+    ]
+}

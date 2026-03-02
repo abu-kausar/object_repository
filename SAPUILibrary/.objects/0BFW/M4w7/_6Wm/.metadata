@@ -1,0 +1,12 @@
+﻿{
+  "Name": "SAP_Login",
+  "Type": "Screen",
+  "Id": "_6Wmg6PUuke9xxihmeXD2A",
+  "Reference": "CzpS0zKua0iQdKHLw-uqIg/_6Wmg6PUuke9xxihmeXD2A",
+  "ParentRef": "CzpS0zKua0iQdKHLw-uqIg/M4w7dx0nhkCaSarcCbg-BQ",
+  "Created": "2026-03-02T04:23:18.0101661Z",
+  "Updated": "2026-03-02T04:23:18.0101661Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "Name": "UsernameInput",
+  "Type": "Descriptor",
+  "Id": "User0001000000000001",
+  "Reference": "CzpS0zKua0iQdKHLw-uqIg/User0001000000000001",
+  "ParentRef": "CzpS0zKua0iQdKHLw-uqIg/_6Wmg6PUuke9xxihmeXD2A",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

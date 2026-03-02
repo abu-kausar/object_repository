@@ -1,0 +1,10 @@
+{
+  "Name": "PurchaseReqProcessing",
+  "Type": "Descriptor",
+  "Id": "Purc0001000000000001",
+  "Reference": "CzpS0zKua0iQdKHLw-uqIg/Purc0001000000000001",
+  "ParentRef": "CzpS0zKua0iQdKHLw-uqIg/O1gL-cPw-UiE9sWd71q2Hg",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "Name": "Gmail_UI_Library",
+  "ProjectType": "Library",
+  "Description": "Automatically generated Gmail UI Library from Python Object Repository",
+  "MainFile": "Main.xaml"
+}

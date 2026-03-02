@@ -1,0 +1,12 @@
+﻿{
+  "Name": "SAP_Home",
+  "Type": "Screen",
+  "Id": "O1gL-cPw-UiE9sWd71q2Hg",
+  "Reference": "CzpS0zKua0iQdKHLw-uqIg/O1gL-cPw-UiE9sWd71q2Hg",
+  "ParentRef": "CzpS0zKua0iQdKHLw-uqIg/M4w7dx0nhkCaSarcCbg-BQ",
+  "Created": "2026-03-02T04:23:36.5183722Z",
+  "Updated": "2026-03-02T04:23:36.5183722Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

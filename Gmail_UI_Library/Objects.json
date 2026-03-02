@@ -1,0 +1,185 @@
+{
+  "SchemaVersion": "4.0",
+  "Applications": [
+    {
+      "Id": "5_eFQ4iNSkau2z8LAN5zPg",
+      "Name": "Google_Workspace",
+      "Version": "1.0.0",
+      "Type": "Web",
+      "Screens": [
+        {
+          "Id": "e2g1TFksRUWIhQL26EXtMg",
+          "Name": "Login_Email",
+          "DisplayName": "Login Email",
+          "URL": "https://accounts.google.com/",
+          "UIElements": [
+            {
+              "Id": "EmIn0001000000000001",
+              "Name": "EmailInput",
+              "DisplayName": "Email Input",
+              "Type": "Input",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl id='identifierId' />"
+              }
+            },
+            {
+              "Id": "NxBt0001000000000001",
+              "Name": "NextButton",
+              "DisplayName": "Next",
+              "Type": "Button",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl id='identifierNext' />"
+              }
+            }
+          ]
+        },
+        {
+          "Id": "OgUKpTetdkOEBAAHhjTJaw",
+          "Name": "Login_Password",
+          "DisplayName": "Login Password",
+          "URL": "https://accounts.google.com/",
+          "UIElements": [
+            {
+              "Id": "PsIn0001000000000001",
+              "Name": "PasswordInput",
+              "DisplayName": "Password Input",
+              "Type": "Input",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='INPUT' name='Passwd' />"
+              }
+            },
+            {
+              "Id": "NxB20001000000000001",
+              "Name": "NextButton",
+              "DisplayName": "Next",
+              "Type": "Button",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl id='passwordNext' />"
+              }
+            }
+          ]
+        },
+        {
+          "Id": "WxKAw64tfEOEbg1fg8bfXA",
+          "Name": "Gmail_Dashboard",
+          "DisplayName": "Gmail Dashboard",
+          "URL": "https://mail.google.com/",
+          "UIElements": [
+            {
+              "Id": "Inbo0001000000000001",
+              "Name": "Inbox",
+              "DisplayName": "Inbox",
+              "Type": "Link",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='A' href='#inbox' />"
+              }
+            },
+            {
+              "Id": "Sen00001000000000001",
+              "Name": "Sent",
+              "DisplayName": "Sent",
+              "Type": "Link",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='A' href='#sent' />"
+              }
+            },
+            {
+              "Id": "Dra00001000000000001",
+              "Name": "Drafts",
+              "DisplayName": "Drafts",
+              "Type": "Link",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='A' href='#drafts' />"
+              }
+            },
+            {
+              "Id": "Com00001000000000001",
+              "Name": "Compose",
+              "DisplayName": "Compose",
+              "Type": "Button",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='DIV' aaname='Compose' />"
+              }
+            },
+            {
+              "Id": "Spam0001000000000001",
+              "Name": "Spam",
+              "DisplayName": "Spam",
+              "Type": "Link",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='A' href='#spam' />"
+              }
+            },
+            {
+              "Id": "Soci0001000000000001",
+              "Name": "Social",
+              "DisplayName": "Social",
+              "Type": "Link",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='A' href='#social' />"
+              }
+            }
+          ]
+        },
+        {
+          "Id": "ty3z0Lt7rkiERCRsLw2NoA",
+          "Name": "Gmail_Compose",
+          "DisplayName": "Gmail Compose",
+          "URL": "https://mail.google.com/",
+          "UIElements": [
+            {
+              "Id": "ToFi0001000000000001",
+              "Name": "To",
+              "DisplayName": "To",
+              "Type": "Input",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='TEXTAREA' name='to' />"
+              }
+            },
+            {
+              "Id": "SuFi0001000000000001",
+              "Name": "Subject",
+              "DisplayName": "Subject",
+              "Type": "Input",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='INPUT' name='subjectbox' />"
+              }
+            },
+            {
+              "Id": "BoFi0001000000000001",
+              "Name": "MessageBody",
+              "DisplayName": "MessageBody",
+              "Type": "Input",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='DIV' aria-label='Message Body' />"
+              }
+            },
+            {
+              "Id": "SeBu0001000000000001",
+              "Name": "SendButton",
+              "DisplayName": "Send",
+              "Type": "Button",
+              "Selector": {
+                "Type": "Selector",
+                "Value": "<webctrl tag='DIV' aaname='Send' role='button' />"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

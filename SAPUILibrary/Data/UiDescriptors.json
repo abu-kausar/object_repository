@@ -1,0 +1,213 @@
+{
+  "SchemaVersion": "4.0",
+  "Applications": [
+    {
+      "Id": "0BFW7D_wE06pk3NHpQqBAQ",
+      "Name": "SAP_S4HANA",
+      "Version": "1.0.0",
+      "Type": "Web",
+      "Screens": [
+        {
+          "Id": "_6Wmg6PUuke9xxihmeXD2A",
+          "Name": "SAP_Login",
+          "DisplayName": "SAP Login",
+          "URL": "https://my402955.s4hana.cloud.sap/ui#Shell-home",
+          "UIElements": [
+            {
+              "Id": "User0001000000000001",
+              "Name": "UsernameInput",
+              "DisplayName": "UsernameInput",
+              "Type": "Input",
+              "Selector": {
+                "Type": "CssSelector",
+                "Value": "input[name='j_username'], input[type='email']"
+              }
+            },
+            {
+              "Id": "Pass0001000000000001",
+              "Name": "PasswordInput",
+              "DisplayName": "PasswordInput",
+              "Type": "Input",
+              "Selector": {
+                "Type": "CssSelector",
+                "Value": "input[name='j_password'], input[type='password']"
+              }
+            },
+            {
+              "Id": "Cont0001000000000001",
+              "Name": "ContinueButton",
+              "DisplayName": "ContinueButton",
+              "Type": "Button",
+              "Selector": {
+                "Type": "CssSelector",
+                "Value": "button[type='submit'], #logOnFormSubmit"
+              }
+            }
+          ]
+        },
+        {
+          "Id": "O1gL-cPw-UiE9sWd71q2Hg",
+          "Name": "SAP_Home",
+          "DisplayName": "SAP Home",
+          "URL": "https://my402955.s4hana.cloud.sap/ui#Shell-home",
+          "UIElements": [
+            {
+              "Id": "Purc0001000000000001",
+              "Name": "PurchaseReqProcessing",
+              "DisplayName": "PurchaseReqProcessing",
+              "Type": "Button",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//div[contains(@title, 'Purchase Requisition Processing')]"
+              }
+            },
+            {
+              "Id": "Mana0001000000000001",
+              "Name": "ManagePurchaseReq",
+              "DisplayName": "ManagePurchaseReq",
+              "Type": "Button",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//div[contains(@title, 'Manage Purchase Requisitions')]"
+              }
+            }
+          ]
+        },
+        {
+          "Id": "62mHfywoVkuo3ivf_c6PuQ",
+          "Name": "SAP_Manage_PR",
+          "DisplayName": "SAP Manage PR",
+          "URL": "https://my402955.s4hana.cloud.sap/ui#Shell-home",
+          "UIElements": [
+            {
+              "Id": "Crea0001000000000001",
+              "Name": "CreatePRButton",
+              "DisplayName": "CreatePRButton",
+              "Type": "Button",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//button[contains(., 'Create')]"
+              }
+            },
+            {
+              "Id": "Cre10001000000000001",
+              "Name": "CreateItemLine",
+              "DisplayName": "CreateItemLine",
+              "Type": "Button",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//button[contains(., 'Create Item') or contains(@title, 'Create Item')]"
+              }
+            },
+            {
+              "Id": "Sele0001000000000001",
+              "Name": "SelectMaterial",
+              "DisplayName": "SelectMaterial",
+              "Type": "Button",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//li[contains(text(), 'Material')]"
+              }
+            }
+          ]
+        },
+        {
+          "Id": "dY9XV8btY02ASsGnTAu91Q",
+          "Name": "SAP_PR_Item",
+          "DisplayName": "SAP PR Item",
+          "URL": "https://my402955.s4hana.cloud.sap/ui#Shell-home",
+          "UIElements": [
+            {
+              "Id": "Mate0001000000000001",
+              "Name": "MaterialInput",
+              "DisplayName": "MaterialInput",
+              "Type": "Input",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//input[contains(@id, 'material') or contains(@aria-label, 'Material')]"
+              }
+            },
+            {
+              "Id": "Plan0001000000000001",
+              "Name": "PlantInput",
+              "DisplayName": "PlantInput",
+              "Type": "Input",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//input[contains(@id, 'plant') or contains(@aria-label, 'Plant')]"
+              }
+            },
+            {
+              "Id": "Quan0001000000000001",
+              "Name": "QuantityInput",
+              "DisplayName": "QuantityInput",
+              "Type": "Input",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//input[contains(@id, 'quantity') or contains(@aria-label, 'Quantity')]"
+              }
+            },
+            {
+              "Id": "Valu0001000000000001",
+              "Name": "ValuationPriceInput",
+              "DisplayName": "ValuationPriceInput",
+              "Type": "Input",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//input[contains(@id, 'price') or contains(@aria-label, 'Valuation Price')]"
+              }
+            },
+            {
+              "Id": "Appl0001000000000001",
+              "Name": "ApplyButton",
+              "DisplayName": "ApplyButton",
+              "Type": "Button",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//button[contains(., 'Apply')]"
+              }
+            }
+          ]
+        },
+        {
+          "Id": "0QDtAtkmpEuOkV8qT6ESoQ",
+          "Name": "SAP_PR_Submit",
+          "DisplayName": "SAP PR Submit",
+          "URL": "https://my402955.s4hana.cloud.sap/ui#Shell-home",
+          "UIElements": [
+            {
+              "Id": "Crea0001000000000001",
+              "Name": "CreateBottomBar",
+              "DisplayName": "CreateBottomBar",
+              "Type": "Button",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//footer//button[contains(., 'Create')]"
+              }
+            },
+            {
+              "Id": "Warn0001000000000001",
+              "Name": "WarningCreate",
+              "DisplayName": "WarningCreate",
+              "Type": "Button",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//div[contains(@class, 'sapMDialog')]//button[contains(., 'Create')]"
+              }
+            },
+            {
+              "Id": "PRNu0001000000000001",
+              "Name": "PRNumberText",
+              "DisplayName": "PRNumberText",
+              "Type": "Text",
+              "Selector": {
+                "Type": "XmlPath",
+                "Value": "//div[contains(@class, 'sapMMessageToast')]"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

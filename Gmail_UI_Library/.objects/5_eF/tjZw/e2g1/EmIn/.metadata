@@ -1,0 +1,10 @@
+{
+  "Name": "EmailInput",
+  "Type": "Descriptor",
+  "Id": "EmIn0001000000000001",
+  "Reference": "ZftEUAJ9MUyMlt_mopmLlw/EmIn0001000000000001",
+  "ParentRef": "ZftEUAJ9MUyMlt_mopmLlw/e2g1TFksRUWIhQL26EXtMg",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

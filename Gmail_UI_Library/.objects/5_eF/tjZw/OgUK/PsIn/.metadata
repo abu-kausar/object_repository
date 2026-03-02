@@ -1,0 +1,10 @@
+{
+  "Name": "PasswordInput",
+  "Type": "Descriptor",
+  "Id": "PsIn0001000000000001",
+  "Reference": "ZftEUAJ9MUyMlt_mopmLlw/PsIn0001000000000001",
+  "ParentRef": "ZftEUAJ9MUyMlt_mopmLlw/OgUKpTetdkOEBAAHhjTJaw",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

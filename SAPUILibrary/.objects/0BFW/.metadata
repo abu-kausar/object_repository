@@ -1,0 +1,12 @@
+﻿{
+  "Name": "SAP_S4HANA",
+  "Description": "SAP_S4HANA",
+  "Type": "App",
+  "Id": "0BFW7D_wE06pk3NHpQqBAQ",
+  "Reference": "CzpS0zKua0iQdKHLw-uqIg/0BFW7D_wE06pk3NHpQqBAQ",
+  "Created": "2026-03-02T04:22:51.047465Z",
+  "Updated": "2026-03-02T04:22:51.047465Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

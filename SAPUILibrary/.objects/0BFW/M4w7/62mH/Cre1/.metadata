@@ -1,0 +1,10 @@
+{
+  "Name": "CreateItemLine",
+  "Type": "Descriptor",
+  "Id": "Cre10001000000000001",
+  "Reference": "CzpS0zKua0iQdKHLw-uqIg/Cre10001000000000001",
+  "ParentRef": "CzpS0zKua0iQdKHLw-uqIg/62mHfywoVkuo3ivf_c6PuQ",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

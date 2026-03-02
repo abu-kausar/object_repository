@@ -1,0 +1,11 @@
+{
+  "Name": "Gmail_Compose",
+  "Description": "https://mail.google.com/",
+  "Type": "Screen",
+  "Id": "ty3z0Lt7rkiERCRsLw2NoA",
+  "Reference": "ZftEUAJ9MUyMlt_mopmLlw/ty3z0Lt7rkiERCRsLw2NoA",
+  "ParentRef": "ZftEUAJ9MUyMlt_mopmLlw/tjZwPnzch0-f2u1tNZZq6w",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

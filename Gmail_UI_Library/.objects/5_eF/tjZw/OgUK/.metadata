@@ -1,0 +1,11 @@
+{
+  "Name": "Login_Password",
+  "Description": "https://accounts.google.com/",
+  "Type": "Screen",
+  "Id": "OgUKpTetdkOEBAAHhjTJaw",
+  "Reference": "ZftEUAJ9MUyMlt_mopmLlw/OgUKpTetdkOEBAAHhjTJaw",
+  "ParentRef": "ZftEUAJ9MUyMlt_mopmLlw/tjZwPnzch0-f2u1tNZZq6w",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

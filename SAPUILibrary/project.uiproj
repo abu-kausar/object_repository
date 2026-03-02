@@ -1,0 +1,6 @@
+{
+  "Name": "SAP_UI_Library",
+  "ProjectType": "Library",
+  "Description": "SAP_UI_Library",
+  "MainFile": "NewActivity.xaml"
+}

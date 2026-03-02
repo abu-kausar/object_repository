@@ -1,0 +1,10 @@
+{
+  "Name": "MaterialInput",
+  "Type": "Descriptor",
+  "Id": "Mate0001000000000001",
+  "Reference": "CzpS0zKua0iQdKHLw-uqIg/Mate0001000000000001",
+  "ParentRef": "CzpS0zKua0iQdKHLw-uqIg/dY9XV8btY02ASsGnTAu91Q",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
