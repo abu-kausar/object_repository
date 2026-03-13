@@ -3,7 +3,7 @@ import os
 import uuid
 from datetime import datetime
 
-REPO_FILE = "repository.json"
+REPO_FILE = "object_repository/uipath_object_repository.json"
 
 class ObjectRepository:
     """

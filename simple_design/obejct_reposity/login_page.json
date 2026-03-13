@@ -1,0 +1,14 @@
+{
+  "username_field": {
+    "by": "id",
+    "value": "username"
+  },
+  "password_field": {
+    "by": "id",
+    "value": "password"
+  },
+  "login_button": {
+    "by": "xpath",
+    "value": "//button[@type='submit']"
+  }
+}
