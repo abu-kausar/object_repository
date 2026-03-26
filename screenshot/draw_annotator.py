@@ -1,6 +1,8 @@
 import os
 from PIL import Image, ImageDraw, ImageFont
 
+from common.logger import Logger
+logger = Logger.get_logger("draw_annotator")
 
 class DrawAnnotator:
 
@@ -116,7 +118,7 @@ class DrawAnnotator:
 
         img.save(out_path)
 
-        print("Annotated ->", out_path)
+        logger.info("Annotated ->", out_path)
 
     # -------------------------
     # draw all pages
@@ -131,3 +133,4 @@ class DrawAnnotator:
                 page_name,
                 elements
             )
+        logger.info(f"All detected anchor box drawn successfully in this folder: {self.out_dir}")

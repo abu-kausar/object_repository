@@ -28,3 +28,31 @@ def get_screen_name(page):
 
     except:
         return "unknown_page"
+
+
+def get_page_key(page):
+
+    try:
+        url = page.url
+
+        parsed = urlparse(url)
+
+        path = parsed.path.strip("/").replace("/", "_")
+
+        if not path:
+            path = "home"
+
+        query = parsed.query
+
+        if query:
+            query = query.replace("=", "_").replace("&", "_")
+            path = f"{path}_{query}"
+
+        name = f"{parsed.netloc}_{path}"
+
+        name = re.sub(r'[\\/*?:"<>|]', "_", name)
+
+        return name[:200]
+
+    except:
+        return "unknown_page"
