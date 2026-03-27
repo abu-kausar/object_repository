@@ -118,7 +118,7 @@ class DrawAnnotator:
 
         img.save(out_path)
 
-        logger.info("Annotated ->", out_path)
+        logger.info(f"Annotated -> {out_path}")
 
     # -------------------------
     # draw all pages

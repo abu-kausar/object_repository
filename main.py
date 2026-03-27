@@ -22,6 +22,7 @@ def main():
         "base_url": url,
         "pages": {}
     }
+    is_processing = {"value": False}
 
     browser = BrowserManager()
     page, context = browser.start()
@@ -35,6 +36,37 @@ def main():
     logger.info("All Instant created Successfully.")
 
     last_screen = {"name": None}
+    
+    def inject_dom_observer():
+
+        page.expose_function("notify_dom_change", lambda: handle_ui_change())
+
+        page.evaluate("""
+            () => {
+                let debounceTimer;
+                let lastTrigger = 0;
+
+                const observer = new MutationObserver(() => {
+
+                    const now = Date.now();
+
+                    // ⛔ prevent rapid firing
+                    if (now - lastTrigger < 1000) return;
+
+                    clearTimeout(debounceTimer);
+
+                    debounceTimer = setTimeout(() => {
+                        lastTrigger = Date.now();
+                        window.notify_dom_change();
+                    }, 500);
+                });
+
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        """)
 
 
     # -----------------------------
@@ -42,42 +74,46 @@ def main():
     # -----------------------------
     def handle_ui_change():
 
-        try:
-            logger.info("Waiting for network idle...")
-            page.wait_for_load_state("networkidle")
-            page.wait_for_timeout(700)
-        except:
-            pass
-
-        name = get_page_key(page)
-
-        # prevent duplicate extraction
-        if name == last_screen["name"]:
+        if is_processing["value"]:
             return
 
-        last_screen["name"] = name
+        is_processing["value"] = True
 
-        print("Loaded ->", name)
-
-        # -------- MAIN PAGE EXTRACTION (unchanged behavior)
         try:
-            extractor.extract(page, name)
-        except:
-            pass
-
-        # -------- IFRAME EXTRACTION (new)
-        for frame in page.frames:
-            if frame == page.main_frame:
-                continue
-
+            logger.info("handle_ui_change(): Waiting for network idle...")
             try:
-                extractor.extract(frame, name)
+                page.wait_for_load_state("networkidle")
+                page.wait_for_timeout(700)
             except:
                 pass
 
-        screenshot.take(page, base_name, name)
+            name = get_page_key(page)
 
-        storage.save(repo, base_name)
+            logger.info(f"Loaded -> {name}")
+
+            # -------- MAIN PAGE EXTRACTION
+            try:
+                extractor.extract(page, name)
+            except:
+                pass
+
+            # -------- IFRAME EXTRACTION
+            for frame in page.frames:
+                if frame == page.main_frame:
+                    continue
+
+                try:
+                    extractor.extract(frame, name)
+                except:
+                    pass
+
+            screenshot.take(page, base_name, name)
+            storage.save(repo, base_name)
+
+        finally:
+            # 🔥 IMPORTANT: release lock
+            page.wait_for_timeout(300)  # small cooldown
+            is_processing["value"] = False
 
 
     # -----------------------------
@@ -89,12 +125,9 @@ def main():
             return
 
         try:
-            print("Navigated to:", frame.url)
-            print("Waiting for load state...")
+            logger.info(f"on_nav(): Navigated to: {frame.url}")
+            logger.info("on_nav(): Waiting for load state...")
             page.wait_for_load_state("load")
-            print("Waiting for network idle...")
-            page.wait_for_load_state("networkidle")
-            page.wait_for_timeout(700)
         except:
             pass
 
@@ -105,7 +138,8 @@ def main():
     # AJAX / FETCH / API change
     # -----------------------------
     def on_response(response):
-
+        logger.debug(f"on_response(): Response received: {response.url}")
+        logger.debug(f"on_response(): Resource type: {response.request.resource_type}")
         try:
             if response.request.resource_type in ["xhr", "fetch"]:
                 handle_ui_change()
@@ -137,6 +171,7 @@ def main():
     # START
     # -----------------------------
     page.goto(url)
+    inject_dom_observer()
 
     try:
         page.wait_for_timeout(999999999)
