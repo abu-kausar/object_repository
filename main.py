@@ -23,6 +23,7 @@ def main():
         "pages": {}
     }
     is_processing = {"value": False}
+    screen_versions = {}
 
     browser = BrowserManager()
     page, context = browser.start()
@@ -88,8 +89,16 @@ def main():
                 pass
 
             name = get_page_key(page)
+            
+            # Handle Duplicate Screen Names
+            if name not in screen_versions:
+                screen_versions[name] = 0
+            else:
+                screen_versions[name] += 1
 
-            logger.info(f"Loaded -> {name}")
+            versioned_name = f"{name}_v{screen_versions[name]}"
+
+            logger.info(f"Loaded -> {versioned_name}")
 
             # -------- MAIN PAGE EXTRACTION
             try:
@@ -107,7 +116,7 @@ def main():
                 except:
                     pass
 
-            screenshot.take(page, base_name, name)
+            screenshot.take(page, base_name, versioned_name)
             storage.save(repo, base_name)
 
         finally:

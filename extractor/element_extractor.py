@@ -134,7 +134,9 @@ class ElementExtractor:
 
                     "data_id": data_id,
 
-                    "selector": sel,
+                    # "selector": sel, # previous, valid css selector
+                    
+                    "selector": ElementExtractor.normalize_selector(sel), # new although it is not a valid CSS selector, it is more consistent and easier to parse
 
                     "box": box,
                 }
@@ -144,3 +146,18 @@ class ElementExtractor:
 
             except:
                 pass
+    
+    @staticmethod
+    def normalize_selector(sel: str) -> str:
+
+        # case 1: convert :not([type='hidden'])
+        if sel.startswith("input:not("):
+            inner = sel.replace("input:not(", "").rstrip(")")
+            
+            # OPTION A (your requested format)
+            return f"input({inner})"
+
+            # OPTION B (recommended valid CSS)
+            # return f"input{inner}"
+
+        return sel
